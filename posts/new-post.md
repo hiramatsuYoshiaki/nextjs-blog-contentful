@@ -1,5 +1,5 @@
 ---
-title: "Vercel nextjs-blog"
+title: "Vercel nextjs-blog deploy "
 date: "2020-11-04"
 ---
 
