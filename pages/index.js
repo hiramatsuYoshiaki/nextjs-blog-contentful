@@ -4,7 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
-
+// 事前レンダリング
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
@@ -21,6 +21,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <p>Contentful Blog Test </p>
         <p>はじめまして、HDRフォトグラファーのTOURdeHDRです。</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
@@ -35,7 +36,6 @@ export default function Home({ allPostsData }) {
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
-
               <br />
               {/* {id} */}
               {/* <br /> */}
@@ -45,6 +45,12 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+        <h2 className={utilStyles.headingLg}>Contentful Blog TOURdeHDR</h2>
+        <Link href="/contentful/Posts">
+          <a>Contentful Post</a>
+        </Link>
       </section>
     </Layout>
   );

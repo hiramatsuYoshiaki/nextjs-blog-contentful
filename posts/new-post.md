@@ -1,6 +1,6 @@
 ---
-title: "Vercel nextjs-blog deploy "
-date: "2020-11-04"
+title: "Vercel nextjs-blog deploy !!! "
+date: "2020-11-05"
 ---
 
 Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.
